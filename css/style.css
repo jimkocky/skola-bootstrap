@@ -231,6 +231,27 @@ header {
   background: var(--bg-gray);
 }
 
+.why-study{
+  display: flex;
+  height: 90vh;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.why-study-item{
+  text-align: left;
+}
+
+.study-programs{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+
 .study-card {
   width: 480px;
   height: 240px;
@@ -275,6 +296,76 @@ header {
 .study-card:hover h3,
 .study-card:hover p {
   color: white;
+}
+
+/* Základní styl pro čáru v kartě */
+.study-card hr {
+  width: 60px; /* Počáteční délka čáry */
+  height: 4px; 
+  border: none;
+  opacity: 1;
+  
+  /* KLÍČOVÁ ZMĚNA: Automatický margin zleva i zprava čáru vycentruje */
+  margin: 20px auto; 
+  
+  transition: 0.4s ease-in-out; /* Plynulejší přechod */
+  position: relative;
+  z-index: 2;
+}
+
+/* Barvy čar zůstávají stejné */
+.lyceum-card hr { background-color: var(--lyceum); }
+.it-card hr { background-color: var(--it); }
+.kuchar-card hr { background-color: var(--kuchar); }
+
+/* Efekt při najetí na kartu */
+.study-card:hover hr {
+  background-color: white;
+  
+  /* Čára se rozšíří na obě strany, protože má margin: auto */
+  width: 150px; 
+}
+
+.section-title.text-start::after {
+  margin: 15px 0 0; /* Zarovnání linky doleva pro text-start */
+}
+
+.img-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.img-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+/* Úprava karet oborů v sekci About (místo TEXT TEXT TEXT) */
+#about p.fs-5 {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--gray);
+}
+
+/* Kontakt form styling */
+.form-control {
+  padding: 12px 20px;
+  border: 1px solid white;
+}
+
+.form-control:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 0.25rem rgba(226, 15, 127, 0.25);
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer - malá výplň, ať tam něco je */
+footer::after {
+  content: "© 2026 Střední škola LIK. Všechna práva vyhrazena.";
+  color: white;
+  font-size: 0.9rem;
 }
 
 footer {
