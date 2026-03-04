@@ -2,7 +2,7 @@
   --primary: #1f2a44;
   --secondary: #e20f7f;
   --text: #231f20;
-  --bg-gray: #f5f5f5;
+  --bg-gray: #fcfcfc;
 
   --lyceum: #662d87;
   --it: #f4b02d;
@@ -39,6 +39,10 @@ body {
 header {
   height: 90px;
   background: var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 .logo h1 {
@@ -345,9 +349,26 @@ header {
   color: var(--gray);
 }
 
+#kontakt-gray{
+  background-color: var(--bg-gray);
+  min-height: 75vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kontakt-white{
+  
+  min-height: 75vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-form {
   background: white;
-  border-radius: 20px;
 }
 
 .form-label {
@@ -422,4 +443,108 @@ header {
     align-items: center;
     gap: 1.5%;
     flex-wrap: wrap;
+}
+
+
+
+
+/* --- SUB-HERO STYLY --- */
+.sub-hero {
+    background: var(--primary);
+    color: white;
+    padding: 100px 0 60px;
+    opacity: 95%;
+}
+
+.sub-hero-title {
+    font-family: 'ClashDisplay-Regular';
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* --- BENEFIT KARTY --- */
+.bg-gray-section {
+    background-color: var(--bg-gray);
+}
+
+.benefit-card {
+    background: white;
+    padding: 40px 25px;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s;
+    border-bottom: 4px solid transparent;
+}
+
+/* --- SEZNAM S FAJKAMI --- */
+.extra-benefits-box {
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.custom-check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-check-list li {
+    margin-bottom: 15px;
+    padding-left: 35px;
+}
+
+/* --- TESTIMONIALS --- */
+.testimonial-card {
+    background: var(--primary);
+    color: white;
+    padding: 35px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.testimonial-author {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.testimonial-author span {
+    display: block;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+/* --- DEKORACE OBRÁZKU --- */
+.image-deco-wrapper {
+    position: relative;
+    padding: 10px;
+}
+
+.image-deco-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 100px;
+    height: 100px;
+    border-top: 5px solid var(--secondary);
+    border-right: 5px solid var(--secondary);
+    z-index: 0;
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--gray);
+    font-size: 0.9rem;
 }
