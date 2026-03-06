@@ -262,8 +262,7 @@ header {
   height: 100%;
 }
 
-.study-card h3,
-.study-card p {
+.study-card h3,.study-card p {
   position: relative;
   z-index: 2;
   transition: 0.4s;
@@ -273,8 +272,7 @@ header {
   font-family: 'ClashDisplay-Regular';
 }
 
-.study-card:hover h3,
-.study-card:hover p {
+.study-card:hover h3, .study-card:hover p {
   color: white;
 }
 
@@ -282,7 +280,9 @@ header {
   width: 60px;
   height: 4px; 
   border: none;
+  opacity: 1;
   margin: 20px auto; 
+  transition: 0.4s ease-in-out;
   position: relative;
   z-index: 2;
 }
@@ -313,10 +313,8 @@ header {
 #kontakt-white, #kontakt-gray{
   min-height: 75vh;
   max-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
 #kontakt-gray{
   background-color: var(--bg-gray);
 }
@@ -342,17 +340,6 @@ header {
 .site-footer {
   background: var(--primary);
   color: white;
-  padding: 60px 40px;
-}
-
-.site-footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
 }
 
 .footer-logo {
@@ -364,12 +351,6 @@ header {
 .footer-sub {
   font-size: 16px;
   letter-spacing: 2px;
-  margin-top: 5px;
-}
-
-.site-footer-contact p {
-  margin: 6px 0;
-  font-size: 18px;
 }
 
 .site-footer-contact strong {
@@ -377,12 +358,9 @@ header {
   font-weight: 600;
 }
 
-.site-footer-copy {
+.site-footer-contact p, 
+.site-footer-copy p {
   font-size: 18px;
-}
-
-.footer-h4{
-  font-family: Pencerio_Complete;
 }
 
 .sub-hero {
@@ -452,26 +430,10 @@ span {
     letter-spacing: 1px;
 }
 
-.small-label {
-    display: block;
-    font-size: 0.75rem;
-    color: #999;
-    font-weight: 600;
-    margin-bottom: 2px;
-}
-
-.contact-link {
-    color: var(--secondary);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
 .team-card {
-    background: white;
+    background: var(--primary);
     height: 100%;
     overflow: hidden;
-    border: 1px solid #eee;
     display: flex;
     flex-direction: column;
 }
@@ -480,7 +442,6 @@ span {
     width: 100%;
     height: 240px;
     overflow: hidden;
-    background: #f0f0f0;
 }
 
 .team-image-wrapper img {
@@ -500,18 +461,9 @@ span {
 }
 
 .team-content h4 {
-    font-size: 1rem;
-    font-weight: bold;
     margin-bottom: 0.5rem;
     line-height: 1.2;
     color: var(--primary);
-}
-
-.team-content .role {
-    font-size: 0.85rem;
-    color: #6c757d;
-    margin-bottom: 0.75rem;
-    font-weight: 500;
 }
 
 .mail-link {
@@ -519,15 +471,6 @@ span {
     color: var(--secondary);
     text-decoration: none;
     font-weight: bold;
-}
-
-.cards-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    gap: 40px;
-    width: 100%;
-    margin-bottom: 5%;
 }
 
 .study-card-extended {
@@ -616,8 +559,7 @@ ul.list-unstyled li {
   }
 
   .hero h1 {
-    font-size: 600%;
-    line-height: 0.88;
+    font-size: 800%;
   }
 
   .hero h2 {
@@ -625,7 +567,7 @@ ul.list-unstyled li {
   }
 
   .hero-form {
-    max-width: 540px;
+    width: 300px;
     flex-direction: column;
     gap: 14px;
   }
@@ -634,15 +576,10 @@ ul.list-unstyled li {
   .hero-form button {
     border-radius: 50px;
     padding: 15px 22px;
-    font-size: 1.1rem;
-  }
-
-  .section-title {
-    font-size: 2.4rem;
   }
 
   .sub-hero-title {
-    font-size: 5.4rem;
+    font-size: 60px;
     line-height: 0.9;
     margin-bottom: 35px;
   }
@@ -672,8 +609,7 @@ ul.list-unstyled li {
     width: 100%;
   }
 
-  .study-card,
-  .study-card-extended {
+  .study-card,.study-card-extended {
     width: 100%;
     max-width: 460px;
     height: auto;
@@ -686,25 +622,6 @@ ul.list-unstyled li {
     justify-content: center;
   }
 
-  .lyceum-title,.it-title,.kuchar-title {
-    font-size: 3.8rem;
-  }
-
-  .info-item {
-    font-size: 1.05rem;
-    padding: 14px 18px;
-  }
-  .contact-form,
-  #kontakt-white .col-lg-8,
-  #kontakt-gray .col-lg-8 {
-    max-width: 100%;
-  }
-
-  .form-control {
-    padding: 14px 18px;
-    font-size: 1.05rem;
-  }
-
   .site-footer-inner {
     flex-direction: column;
     text-align: center;
@@ -713,10 +630,6 @@ ul.list-unstyled li {
   }
 
   .footer-logo {
-    font-size: 3.2rem;
-  }
-
-  .site-footer-contact p {
-    font-size: 1.1rem;
+    font-size: 50px;
   }
 }
