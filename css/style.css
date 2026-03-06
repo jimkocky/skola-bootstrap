@@ -3,11 +3,9 @@
   --secondary: #e20f7f;
   --text: #231f20;
   --bg-gray: #fcfcfc;
-
   --lyceum: #662d87;
   --it: #f4b02d;
   --kuchar: #2d3486;
-
   --gray: #4a4a4a;
 }
 
@@ -15,17 +13,14 @@
   font-family: 'Pencerio_Complete';
   src: url('/fonts/Pencerio_Complete/Fonts/WEB/fonts/Pencerio-Hairline.woff2');
 }
-
 @font-face {
   font-family: 'Aktura_Complete';
   src: url('/fonts/Aktura_Complete/Fonts/WEB/fonts/Aktura-Regular.woff2');
 }
-
 @font-face {
   font-family: 'ClashDisplay-Regular';
   src: url('/fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff2');
 }
-
 @font-face {
   font-family: 'Inter-Regular';
   src: url('/fonts/Inter/static/Inter_18pt-Regular.ttf');
@@ -78,9 +73,7 @@ header {
   background: var(--secondary);
   transition: width 0.3s ease;
 }
-
-.nav a:hover::after,
-.nav a.active::after {
+.nav a:hover::after, .nav a.active::after {
   width: 100%;
 }
 
@@ -90,7 +83,6 @@ header {
   background: url("/img/kola-scaled.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   color: white;
   position: relative;
   display: flex;
@@ -174,15 +166,12 @@ header {
   font-size: 120%;
   transition: all 0.3s ease;
   margin: 12px;
-}
-
-.more {
   background: var(--secondary);
   color: white;
 }
 
-.more:hover {
-  background: var(--primary)  ;
+.btn:hover {
+  background: var(--primary);
   border-color: white;
   transform: translateY(3px);
 }
@@ -223,12 +212,8 @@ header {
   background: var(--primary);
 }
 
-.news-card h3 {
-  font-family: 'ClashDisplay-Regular';
-}
-
-#about {
-  background: var(--bg-gray);
+.bg-gray-section {
+    background-color: var(--bg-gray);
 }
 
 .why-study{
@@ -239,10 +224,6 @@ header {
   width: 100%;
 }
 
-.why-study-item{
-  text-align: left;
-}
-
 .study-programs{
   display: flex;
   align-items: end;
@@ -250,7 +231,6 @@ header {
   gap: 10px;
   flex-direction: column;
 }
-
 
 .study-card {
   width: 480px;
@@ -302,11 +282,7 @@ header {
   width: 60px;
   height: 4px; 
   border: none;
-  opacity: 1;
-  
   margin: 20px auto; 
-  
-  transition: 0.4s ease-in-out;
   position: relative;
   z-index: 2;
 }
@@ -317,16 +293,11 @@ header {
 
 .study-card:hover hr {
   background-color: white;
-  
   width: 150px; 
 }
 
 .section-title.text-start::after {
   margin: 15px 0 0;
-}
-
-.img-wrapper img {
-  transition: transform 0.5s ease;
 }
 
 .img-wrapper:hover img {
@@ -339,21 +310,15 @@ header {
   color: var(--gray);
 }
 
-#kontakt-gray{
-  background-color: var(--bg-gray);
+#kontakt-white, #kontakt-gray{
   min-height: 75vh;
   max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-#kontakt-white{
-  min-height: 75vh;
-  max-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#kontakt-gray{
+  background-color: var(--bg-gray);
 }
 
 .contact-form {
@@ -367,14 +332,10 @@ header {
 
 .form-control {
   padding: 15px 20px;
-  border: 1px solid #eee;
-  background-color: white;
-  transition: 0.3s;
   resize: none;
 }
 
 .form-control:focus {
-  background-color: #fff;
   border-color: var(--secondary);
 }
 
@@ -384,7 +345,7 @@ header {
   padding: 60px 40px;
 }
 
-.site-footer__inner {
+.site-footer-inner {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -398,7 +359,6 @@ header {
   font-family: 'Pencerio_Complete';
   font-size: 48px;
   letter-spacing: 3px;
-  margin: 0;
 }
 
 .footer-sub {
@@ -407,17 +367,17 @@ header {
   margin-top: 5px;
 }
 
-.site-footer__contact p {
+.site-footer-contact p {
   margin: 6px 0;
   font-size: 18px;
 }
 
-.site-footer__contact strong {
+.site-footer-contact strong {
   color: var(--secondary);
   font-weight: 600;
 }
 
-.site-footer__copy {
+.site-footer-copy {
   font-size: 18px;
 }
 
@@ -439,11 +399,6 @@ header {
     color: white;
     letter-spacing: 2px;
     margin-bottom: 40px;
-    text-transform: uppercase;
-}
-
-.bg-gray-section {
-    background-color: var(--bg-gray);
 }
 
 .benefit-card {
@@ -451,18 +406,12 @@ header {
     padding: 40px 25px;
     text-align: center;
     height: 100%;
-    transition: 0.3s;
     border-bottom: 4px solid transparent;
 }
 
 .extra-benefits-box, .benefit-card {
     background: white;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.custom-check-list {
-    list-style: none;
-    padding: 0;
 }
 
 .testimonial-card {
@@ -475,21 +424,9 @@ header {
     justify-content: space-between;
 }
 
-.testimonial-card p {
-    font-style: italic;
-    font-size: 1.1rem;
-}
-
-.testimonial-author {
-    margin-top: 25px;
-    font-weight: bold;
-}
-
-.testimonial-author span {
-    display: block;
-    font-weight: normal;
-    font-size: 0.9rem;
-    color: var(--secondary);
+span {
+  display: block;
+  color: var(--secondary);
 }
 
 .image-deco-wrapper::before {
@@ -506,21 +443,18 @@ header {
 
 .contact-info-box {
     border-top: 8px solid var(--secondary);
-    transition: transform 0.3s ease;
 }
 
 .contact-header {
     font-family: 'ClashDisplay-Regular', sans-serif;
     color: var(--primary);
     margin-bottom: 20px;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .small-label {
     display: block;
     font-size: 0.75rem;
-    text-transform: uppercase;
     color: #999;
     font-weight: 600;
     margin-bottom: 2px;
@@ -533,19 +467,10 @@ header {
     font-size: 1.1rem;
 }
 
-.contact-link:hover, .mail-link:hover {
-    text-decoration: underline;
-}
-
-.bg-gray-section {
-    background-color: var(--bg-gray);
-}
-
 .team-card {
     background: white;
     height: 100%;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #eee;
     display: flex;
     flex-direction: column;
@@ -594,7 +519,6 @@ header {
     color: var(--secondary);
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.2s;
 }
 
 .cards-wrapper {
@@ -612,10 +536,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#lyceum, #kuchar {
-  background: white;
 }
 
 #it {
@@ -648,17 +568,13 @@ header {
   margin: 15px auto 0;
 }
 
-.lyceum-title::after{
-  background-color: var(--lyceum);
-}
+.lyceum-title::after{background-color: var(--lyceum);}
+.it-title::after{background-color: var(--it);}
+.kuchar-title::after{background-color: var(--kuchar);}
 
-.it-title::after{
-  background-color: var(--it);
-}
-
-.kuchar-title::after{
-  background-color: var(--kuchar);
-}
+.info-box-lyceum .info-item{ background-color: var(--lyceum);}
+.info-box-it .info-item{background-color: var(--it);}
+.info-box-kuchar .info-item{background-color: var(--kuchar);}
 
 .info-box-wrapper {
     display: flex;
@@ -678,14 +594,129 @@ ul.list-unstyled li {
     padding-left: 5px;
 }
 
-.info-box-lyceum .info-item{
-  background-color: var(--lyceum);
-}
+@media (max-width: 900px) {
+  header {
+    height: 60px;
+  }
 
-.info-box-it .info-item{
-  background-color: var(--it);
-}
+  .logo h1, .logo h2 {
+    display: none;
+  }
 
-.info-box-kuchar .info-item{
-  background-color: var(--kuchar);
+  nav {
+    position: static;
+    transform: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .nav a {
+    font-size: 135%;
+  }
+
+  .hero h1 {
+    font-size: 600%;
+    line-height: 0.88;
+  }
+
+  .hero h2 {
+    font-size: 200%;
+  }
+
+  .hero-form {
+    max-width: 540px;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero-form input,
+  .hero-form button {
+    border-radius: 50px;
+    padding: 15px 22px;
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2.4rem;
+  }
+
+  .sub-hero-title {
+    font-size: 5.4rem;
+    line-height: 0.9;
+    margin-bottom: 35px;
+  }
+
+  .news-card {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    min-height: 380px;
+  }
+
+  .news-image {
+    height: 200px;
+  }
+
+  .why-study {
+    height: auto;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 50px;
+  }
+
+  .study-programs {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+  }
+
+  .study-card,
+  .study-card-extended {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    min-height: 190px;
+    padding: 32px 24px;
+  }
+
+  .cards-wrapper {
+    gap: 35px;
+    justify-content: center;
+  }
+
+  .lyceum-title,.it-title,.kuchar-title {
+    font-size: 3.8rem;
+  }
+
+  .info-item {
+    font-size: 1.05rem;
+    padding: 14px 18px;
+  }
+  .contact-form,
+  #kontakt-white .col-lg-8,
+  #kontakt-gray .col-lg-8 {
+    max-width: 100%;
+  }
+
+  .form-control {
+    padding: 14px 18px;
+    font-size: 1.05rem;
+  }
+
+  .site-footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 50px 25px;
+  }
+
+  .footer-logo {
+    font-size: 3.2rem;
+  }
+
+  .site-footer-contact p {
+    font-size: 1.1rem;
+  }
 }
